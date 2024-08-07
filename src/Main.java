@@ -1,19 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Capacity packetMilk = new Capacity("Granmother home ", " polietilen", 1);
-        CapacityWithLid bottle = new CapacityWithLid("bootle", "plasmassa", 1.5, true);
-        CapacityWithLid pot = new CapacityWithLid("pot", "iron", 12, true);
-        CapacityWithLid container = new CapacityWithLid("container", "plasmassa", 4, false);
-        CapacityWithLid containerWithLid = new CapacityWithLid("container", "plasmassa", 4.5, true);
+        Mug mug = new Mug(0.3, "Ceramic", true, true);
+        Pot pot = new Pot(5, "Stainless Steel", true, true);
+        Bottle bottle = new Bottle(1.5, "Plastic", "Screw Cap");
+        MilkCarton milkCarton = new MilkCarton(1, "Cardboard", "2024-12-31");
 
-        Mug mug = new Mug("mug", "farfor", 0.4, true){};
-        packetMilk.display();
-        bottle.displayLid();
-        pot.displayLid();
-        container.displayLid();
-        containerWithLid.displayLid();
-        mug.displayMug();
+        System.out.println(mug);
+        System.out.println(pot);
+        System.out.println(bottle);
+        System.out.println(milkCarton);
     }
 }
